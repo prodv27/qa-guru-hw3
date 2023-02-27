@@ -46,7 +46,16 @@ public class PracticeFormTest {
         $("#react-select-4-input").setValue("Delhi").pressEnter();
         $("#submit").click();
 
-        $(".modal-content").shouldHave(text("Dmitry Prokopev"), text("dprokopev@t1-consulting.ru"), text("Male"), text("9508292376"), text("9 September,1997"), text("Computer Science"), text("Sports"), text("bfoto_ru_4761.jpg"), text("Это не очень интересно"), text("NCR Delhi"));
+        $(".modal-content").shouldHave(
+                text("Dmitry Prokopev"),
+                text("dprokopev@t1-consulting.ru"),
+                text("Male"), text("9508292376"),
+                text("9 September,1997"),
+                text("Computer Science"),
+                text("Sports"),
+                text("bfoto_ru_4761.jpg"),
+                text("Это не очень интересно"),
+                text("NCR Delhi"));
 
     }
 
